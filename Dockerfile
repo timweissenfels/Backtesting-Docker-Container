@@ -67,11 +67,6 @@ RUN jupyter notebook --generate-config && \
 
 RUN chown -R --from=root docker ${HOME}
 
-#WORKDIR /home/docker/data
-#ENV USER docker
-#USER docker
-#ENV PATH /home/docker/.local/bin:$PATH
-
 RUN pip install backtesting
-
+RUN pip install fastquant
 CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=*", "--allow-root"]
