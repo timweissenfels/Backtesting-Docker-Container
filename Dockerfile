@@ -31,7 +31,6 @@ SHELL [ "/bin/bash", "-c" ]
 
 EXPOSE 8888
 
-#INSTALL BT
 RUN pip install --upgrade --no-cache-dir pip setuptools wheel && \
     pip install --no-cache-dir numpy jupyter && \
     pip install --no-cache-dir matplotlib==3.2
@@ -40,10 +39,11 @@ RUN pip install Cython
 RUN pip install pandas
 RUN pip install plotly==4.14.3
 RUN pip install scipy
+
+#Install bt
 RUN git clone https://github.com/pmorissette/bt.git
 WORKDIR bt
 RUN python setup.py install
-RUN pip install backtrader
 
 #INSTALL R Packages
 RUN R -e "install.packages('IRkernel',dependencies=TRUE, repos='http://cran.rstudio.com/')"
@@ -67,6 +67,11 @@ RUN jupyter notebook --generate-config && \
 
 RUN chown -R --from=root docker ${HOME}
 
+#Install backtesting
 RUN pip install backtesting
+#Install fastquant
 RUN pip install fastquant
+#Install backtrader
+RUN pip install backtrader
+
 CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=*", "--allow-root"]
