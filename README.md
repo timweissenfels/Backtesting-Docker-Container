@@ -1,24 +1,31 @@
 # Backtesting-Docker-Container
 
 Easy to use Docker Container to backtest trading strategies.
-Gives access to three different backtesting frameworks through Jupyter Notebooks.
+Gives access to four different backtesting frameworks through Jupyter Notebooks.
 
 ## Included Frameworks
 
 - [Backtesting.py (🔎📈🐍💰 Backtest trading strategies in Python)](https://github.com/kernc/backtesting.py)
 - [Backtrader (A feature-rich Python framework for backtesting and trading)](https://github.com/mementum/backtrader)
 - [Fastquant (Backtest and optimize your trading strategies with only 3 lines of code!)](https://github.com/enzoampil/fastquant)
+- [bt (Flexible backtesting framework for Python used to test quantitative trading strategies)](https://github.com/pmorissette/bt)
 
 ## Examples
 
 ### Fastquant
 ![Example1](https://github.com/enzoampil/fastquant/raw/master/docs/assets/rsi.png)
 
+### bt
+![Example5](http://pmorissette.github.io/bt/_images/intro_13_1.png)
+
 ### backtesting.py
 ![Example2](https://camo.githubusercontent.com/4f4b375cd80e854082550e1fbcb7ec25ec2156424017474a910789e15c5f7ce0/68747470733a2f2f692e696d6775722e636f6d2f7852464e4866672e706e67)
 
 ### Fastquant
-![Example1](https://github.com/enzoampil/fastquant/raw/master/docs/assets/bitcoin_forecasts.png)
+![Example3](https://github.com/enzoampil/fastquant/raw/master/docs/assets/bitcoin_forecasts.png)
+
+### bt
+![Example4](http://pmorissette.github.io/bt/_images/intro_10_0.png)
 
 ## Usage
 
@@ -49,3 +56,4 @@ Go to New -> Python3
 - [Backtrader.py](https://www.backtrader.com/docu/)
 - [Backtesting.py](https://kernc.github.io/backtesting.py/doc/backtesting/)
 - [Fastquant](https://github.com/enzoampil/fastquant/blob/master/README.md)
+- [bt](http://pmorissette.github.io/bt/)
