@@ -1,2 +1,2 @@
-# finance-thesis
-Repository for my english/finance Thesis
+# Easy to use Docker container for backtesting purposes
+
